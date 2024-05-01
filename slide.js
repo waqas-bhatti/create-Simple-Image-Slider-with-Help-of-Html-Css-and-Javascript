@@ -6,6 +6,11 @@ slides.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
 });
 
+const goPrev = () => {
+  counter--;
+  slideImage();
+};
+
 const goNext = () => {
   counter += direction;
   if (counter === slides.length || counter === -1) {
